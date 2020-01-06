@@ -1,0 +1,659 @@
+/* MAIN SETTINGS */
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-size: 16px;
+  }
+  
+  h1 {
+    width: 60%;
+    letter-spacing: 2px;
+    line-height: 2rem;
+    font-size: 2rem;
+    padding-bottom: 0.3rem;
+  }
+  
+  h2 {
+    color: #fff;
+    background: #fa382f;
+    display: table;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    padding: 0.2rem 0.5rem;
+  }
+  
+  h2 span {
+    display: none;
+  }
+  
+  h2,
+  h3 {
+    margin: 0 auto;
+    letter-spacing: 0;
+  }
+  
+  h3 {
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    display: table;
+    padding-bottom: 2rem;
+  }
+  
+  h3,
+  h4 {
+    color: #fa382f;
+    text-transform: uppercase;
+  }
+  
+  h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 41px;
+    display: inline;
+  }
+  
+  a:focus {
+    border: solid 3px #db1006;
+    outline: solid 3px #db1006;
+  }
+  
+  /* MAIN CONTENT */
+  main {
+    margin: 0 auto;
+  }
+  
+  .aria {
+    display: none;
+  }
+  
+  /* HEADER */
+  
+  header {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(0, 0, 0, 0.2)),
+        to(rgba(0, 0, 0, 0.2))
+      ),
+      url(Images/header_image.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(Images/header_image.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    padding: 0 2rem 0 2rem;
+  }
+  
+  .header_container {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  
+  .personal_data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 2rem;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-family: "Montserrat", sans-serif;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+  
+  .personal_data h1 {
+    font-weight: 600;
+  }
+  
+  .personal_data p {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 1.12px;
+  }
+  
+  .personal_data span {
+    font-weight: 600;
+  }
+  
+  .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-top: 3rem;
+  }
+  
+  .links a {
+    width: 55px;
+    height: 55px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 0.5rem;
+    background: transparent;
+  }
+  
+  svg {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 5px;
+    background: transparent;
+    -webkit-transform: translateY(17%);
+    transform: translateY(17%);
+  }
+  
+  .profile_image {
+    border-radius: 50%;
+    border: 3px solid #fff;
+    width: 150px;
+    margin-left: auto;
+    position: relative;
+    bottom: -1.8rem;
+    object-fit: cover;
+  }
+  
+  /* ABOUT ME */
+  
+  .about_me,
+  .tech {
+    line-height: 1.8;
+  }
+  
+  .about_me,
+  .featured_projects,
+  .skills,
+  .contact {
+    width: 100%;
+    background: #f4f4f4;
+    padding: 5rem 0;
+  }
+  
+  .about_me_div,
+  .tech_div,
+  .featured_projects_div,
+  .my_thoughts_div,
+  .skills_div,
+  .for_more_div,
+  .contact_div {
+    width: 85%;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    background: #f4f4f4;
+  }
+  
+  .icon_line {
+    width: 20%;
+  }
+  
+  /* TECH */
+  
+  .tech,
+  .my_thoughts,
+  .for_more,
+  .contact {
+    width: 100%;
+    padding: 5rem 0;
+  }
+  
+  .tech_div,
+  .my_thoughts_div,
+  .for_more_div {
+    background: #fff;
+    text-align: center;
+  }
+  
+  .tech_div p {
+    padding-top: 4rem;
+  }
+  
+  .tech_div p span {
+    color: #db1006;
+  }
+  
+  /* PROJECTS */
+  
+  .projects_flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  
+  .flex_container {
+    width: 100%;
+    margin-bottom: 3rem;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .flex_container a {
+    color: #fa382f;
+    font-weight: 900;
+  }
+  
+  .flex_container p {
+    font-size: 1.1rem;
+    line-height: 35px;
+    display: inline;
+  }
+  
+  .featured_img {
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 1rem;
+    object-fit: cover;
+  }
+  
+  .featured_projects_tags {
+    margin-top: 1rem;
+  }
+  
+  .featured_projects_tags p {
+    background: #fddfe7;
+    border: 1px solid #fddfe7;
+    font-size: 0.5rem;
+    font-weight: 300;
+    padding: 0.2rem 0.8rem;
+  }
+  
+  .other_projects_paragraph {
+    font-size: 0.8rem;
+    padding-bottom: 2rem;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .other_projects_paragraph span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #fa382f;
+    text-transform: uppercase;
+  }
+  
+  .other_projects_paragraph a {
+    text-decoration: underline;
+    color: #fa382f;
+    font-weight: 700;
+  }
+  
+  /* MY THOUGHTS */
+  
+  .my_thoughts_div p {
+    display: block;
+  }
+  
+  .my_thoughts_div a {
+    text-decoration: none;
+  }
+  
+  .date {
+    font-weight: 400;
+    color: #fa382f;
+    padding-top: 2rem;
+  }
+  
+  .title {
+    font-weight: 800;
+  }
+  
+  .text {
+    font-weight: 300;
+  }
+  
+  .more_thoughts_p {
+    font-weight: 800;
+  }
+  
+  .thoughts_img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+  }
+  
+  /* SKILLS */
+  
+  .skills_flex_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-top: 4rem;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    line-height: 2rem;
+    font-weight: 300;
+    width: 100%;
+  }
+  
+  .skills_flex_container p {
+    font-size: 1rem;
+  }
+  
+  .skills_flex_container_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  
+  .skills_flex_container_right {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  .skills_third_column {
+    margin-bottom: 4rem;
+  }
+  
+  /* FOR ME */
+  
+  .for_me_links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    margin-top: 4rem;
+  }
+  
+  .for_me_links a {
+    width: 75px;
+    height: 75px;
+    border: 2px solid #fa382f;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    background: transparent;
+  }
+  
+  .for_me_svg {
+    width: 45px;
+    height: 45px;
+    -webkit-transform: translateY(17%);
+    transform: translateY(17%);
+  }
+  
+  /* CONTACT */
+  
+  .contact {
+    background: #072bce;
+    color: #fff;
+  }
+  
+  .contact h3 {
+    color: #fff;
+  }
+  
+  .contact_div {
+    background: #072bce;
+  }
+  
+  .contacts {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  
+  .contacts p {
+    font-weight: 700;
+  }
+  
+  .contacts p:last-child {
+    font-weight: 300;
+    font-size: 0.9rem;
+    padding-top: 2rem;
+  }
+  
+  .contacts a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /*** MEDIA QUERIES***/
+  
+  @media (max-width: 400px) {
+    .profile_image {
+      height: 150px;
+    }
+  }
+  
+  @media (min-width: 550px) {
+    .header_container {
+      width: 70%;
+      margin: 0 auto;
+    }
+  
+    .about_me_div,
+    .tech_div,
+    .my_thoughts_div,
+    .featured_projects_div,
+    .skills_div,
+    .for_more_div,
+    .contact_div {
+      width: 63%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (min-width: 750px) {
+    h1 {
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+  
+    .header_container {
+      width: 60%;
+      margin: 0 auto;
+    }
+  
+    .profile_image {
+      width: 150px;
+      bottom: -2rem;
+    }
+  
+    .personal_data {
+      font-size: 1.5rem;
+    }
+  
+    .personal_data p {
+      font-size: 1.1rem;
+    }
+  
+    .about_me_div,
+    .tech_div,
+    .featured_projects_div,
+    .my_thoughts_div,
+    .skills_div,
+    .for_more_div,
+    .contact_div {
+      width: 57%;
+      margin: 0 auto;
+      font-size: 1.5rem;
+    }
+  
+    .featured_projects_tags p {
+      padding: 0.3rem 1rem;
+    }
+  
+    .icon_line {
+      width: 15%;
+    }
+  
+    .other_projects_paragraph {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (min-width: 950px) {
+    .projects_flex {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+  
+    .flex_container {
+      width: 47%;
+    }
+  
+    .flex_container p {
+      font-size: 1rem;
+    }
+  
+    .other_projects_paragraph {
+      font-size: 1rem;
+    }
+  
+    .featured_projects_tags p {
+      padding: 0.3rem 1rem;
+      font-size: 0.8rem;
+    }
+  
+    .personal_data {
+      font-size: 1.5rem;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+    }
+  
+    .profile_image {
+      width: 200px;
+      bottom: -3rem;
+    }
+  
+    .skills_flex_container_right {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+  
+    h2 span {
+      display: inline;
+    }
+  
+    .icon_line {
+      width: 10%;
+    }
+  }
+  
+  @media (min-width: 1750px) {
+    .about_me_div,
+    .tech_div,
+    .featured_projects_div,
+    .my_thoughts_div,
+    .skills_div,
+    .for_more_div,
+    .contact_div {
+      width: 56%;
+      margin: 0 auto;
+      text-align: center;
+      letter-spacing: 0;
+    }
+  
+    .profile_image {
+      width: 300px;
+    }
+  }
+  
+  @media (min-height: 950px) {
+    .profile_image {
+      bottom: -4.5rem;
+    }
+  }
+  
+  @media (min-height: 1100px) {
+    .profile_image {
+      bottom: -6rem;
+    }
+  }
+  
+  /** AND MEDIA QUERIES ADDING HEIGHT **/
+  
+  @media (orientation: landscape) {
+    .profile_image {
+      bottom: 5rem;
+    }
+  }
+  
+  @media (orientation: landscape) and (max-height: 549px) {
+    .links {
+      visibility: hidden;
+    }
+  }
+  
+  @media (orientation: landscape) and (min-height: 550px) {
+    .profile_image {
+      bottom: -3.3rem;
+    }
+  }
